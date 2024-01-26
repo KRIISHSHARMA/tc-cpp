@@ -1,1 +1,1 @@
-- [array based c++](cpp/array2)
+# [array based c++](cpp/array2)
