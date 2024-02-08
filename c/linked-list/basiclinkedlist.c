@@ -7,10 +7,9 @@ struct node {
 };
 
 void view(struct node *head) {
-    struct node *current = head;
-    while (current != NULL) {
-        printf("%d ", current->data);
-        current = current->next; // Move to the next node
+    while (head!= NULL) {
+        printf("%d ", head->data);
+        head= head->next; // Move to the next node
     }
 }
 
