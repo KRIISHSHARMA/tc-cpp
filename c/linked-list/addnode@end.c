@@ -7,21 +7,20 @@ struct node {
 };
 
 void add(int x,struct node *head,struct node *add){
-     struct node *current = head;
-     while (current->next != NULL) { /* current != NULL will lead to segmentaion fault The issue causing a segmentation fault is that after the while loop, when current becomes NULL, you're attempting to access current->next, which leads to dereferencing a NULL pointer, resulting in undefined behavior and, in this case, a segmentation fault.*/
-        current = current->next; // Move to the next node
+    
+     while (head->next != NULL) { /* head != NULL will lead to segmentaion fault The issue causing a segmentation fault is that after the while loop, when head becomes NULL, you're attempting to access head->next, which leads to dereferencing a NULL pointer, resulting in undefined behavior and, in this case, a segmentation fault.*/
+        head = head->next; // Move to the next node
     }
-    current->next = add;
+    head->next = add;
     add -> data = x;
     add -> next = NULL;
     
 }
 
 void view(struct node *head) {
-    struct node *current = head;
-    while (current != NULL) {
-        printf("%d ", current->data);
-        current = current->next; // Move to the next node
+    while (head != NULL) {
+        printf("%d ", head->data);
+        head = head->next; // Move to the next node
     }
     printf("\n");
 }
