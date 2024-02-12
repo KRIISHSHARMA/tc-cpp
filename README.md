@@ -1,4 +1,4 @@
-# [array based c++](cpp/array2)
-# [stack](cpp/stack)
-# [linked list](c/linked-list)
-# [Binary Tree](c/DLL-binarytree)
+# [Array based c++](cpp/array2)
+# [Stack](cpp/stack)
+# [Linked list](c/linked-list)
+# [Binary Tree](c/DLL-BINARYTREE)
