@@ -23,7 +23,7 @@ void delete(struct node* del , struct node **head){
         return;
     }
 
-    struct node* prev = head;
+    struct node* prev = *head;
     while (prev->next != NULL && prev->next != del) {
         prev = prev->next;
     }
