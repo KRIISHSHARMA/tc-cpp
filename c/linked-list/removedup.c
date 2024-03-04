@@ -10,28 +10,29 @@ typedef struct a {
 
 
 void dup(node *head) {
-    if (head == NULL || head->next == NULL) {
+    if (head == NULL) {
         return;
     }
-
-    node *current = head;
+    
+    node* current = head;
+    node* prev = NULL;
+    int hashSet[10] = {0}; // Assuming a maximum of 10 unique values
 
     while (current != NULL) {
-        node *runner = current;
-
-        while (runner->next != NULL) {
-            if (runner->next->val == current->val) {
-                node *duplicate = runner->next;
-                runner->next = runner->next->next;
-                free(duplicate);
-            } else {
-                runner = runner->next;
-            }
+        if (hashSet[current->val] == 1) {
+            // Duplicate found, remove the node
+            prev->next = current->next;
+            free(current);
+            current = prev->next;
+        } else {
+            // Mark the value as seen
+            hashSet[current->val] = 1;
+            prev = current;
+            current = current->next;
         }
-
-        current = current->next;
     }
 }
+
 
 
 void print(node * head){
