@@ -61,7 +61,11 @@ int main(){
     Person person("KRIISH LOL");
     Student student("NOTME", "BSC IN YAPPING", 85, 2023);
     Emp employee("DEFNOTME", "FREELOADER", 50000);
-
+    
+    Person *lol = new Emp("DEF", "FREEDOM", 500);
+    lol->display();
+    cout<<endl;
+    
     cout << "--- Displaying Person Details ---" << endl;
     person.display();
     cout << endl;
