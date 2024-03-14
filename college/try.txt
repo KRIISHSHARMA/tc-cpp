@@ -1,0 +1,16 @@
+Student Details:	
+Name: kriish
+Grade: 8000
+Roll No. 12
+Year:2000
+
+Student Details:	
+Name: bombaclat
+Grade: 5
+Roll No. 6
+Year:2024
+
+Student Details:	
+Name: lol
+Grade: 10
+Roll No. 0
