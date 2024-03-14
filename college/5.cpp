@@ -15,12 +15,13 @@ void merging(int arr1[] , int arr2[] , int total , int merged[]){
 
 int main(){
 	int total;
-	int arr1[total];
-	int arr2[total];
-	
 	cout<<"Enter Number of Elements for arr : ";
 	cin>>total;
 	cout<<endl;
+
+	int arr1[total];
+	int arr2[total];
+	
 	cout<<"Enter Elements for arr1\n";
 	for (int i = 0 ; i < total ; i++){
 	       cout<<"arr["<<i<<"] =";
@@ -45,4 +46,3 @@ int main(){
 
 	return 0;
 }
-
