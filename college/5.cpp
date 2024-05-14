@@ -46,3 +46,27 @@ int main(){
 
 	return 0;
 }
+
+// another method
+// #include <iostream>
+// #include <algorithm>
+// using namespace std;
+
+// int main() {
+//     int arr1[] = {1, 4, 6, 3, 2};
+//     int arr2[] = {6, 2, 5, 7, 1};
+//     int merged[10]; // Assuming a large enough size for the merged array
+
+//     int arr1Size = sizeof(arr1) / sizeof(arr1[0]);
+//     int arr2Size = sizeof(arr2) / sizeof(arr2[0]);
+
+//    sort(arr1 , arr1 + arr1Size);
+//    sort(arr2 , arr2 + arr2Size);
+   
+//    merge(arr1 , arr1 + arr1Size , arr2 , arr2 + arr2Size , merged);
+//    for(int i = 0 ; i < 10 ; i++){
+//        cout<<merged[i]<<endl;
+//    }
+
+//     return 0;
+// }
